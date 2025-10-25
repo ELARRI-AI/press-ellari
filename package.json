@@ -59,6 +59,7 @@
   "devDependencies": {
     "@fisch0920/config": "^1.2.1",
     "@next/bundle-analyzer": "^15.3.3",
+    "@next/eslint-plugin-next": "^16.0.0",
     "@types/node": "^24.5.2",
     "@types/prismjs": "^1.26.5",
     "@types/react": "^19.1.13",

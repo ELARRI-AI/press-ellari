@@ -1,6 +1,10 @@
 import { config } from '@fisch0920/config/eslint'
+import nextPlugin from '@next/eslint-plugin-next'
+
+const nextCoreWebVitalsConfig = nextPlugin.configs['core-web-vitals']
 
 export default [
+  nextCoreWebVitalsConfig,
   ...config,
   {
     files: ['**/*.ts', '**/*.tsx'],
@@ -16,7 +20,8 @@ export default [
       'jsx-a11y/media-has-caption': 'off',
       'jsx-a11y/interactive-supports-focus': 'off',
       'jsx-a11y/anchor-is-valid': 'off',
-      '@typescript-eslint/naming-convention': 'off'
+      '@typescript-eslint/naming-convention': 'off',
+      'react-hooks/immutability': 'off'
     }
   }
 ]

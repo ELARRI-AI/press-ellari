@@ -7,9 +7,10 @@ export default siteConfig({
   // Pretty URLs -> Notion page IDs (no hyphens)
   pageUrlOverrides: {
     '/changelog': '296d755ae04880b5a963c65fbd10afce', // Press Changelog view page
-    '/methods': 'TODO_METHODS_PAGE_ID_NO_HYPHENS',
-    '/policy': 'TODO_PRESS_POLICY_PAGE_ID_NO_HYPHENS',
-    '/scholar': 'TODO_SCHOLAR_BUNDLE_PAGE_ID_NO_HYPHENS'
+    // Fill in these overrides once the corresponding Notion pages are ready
+    // '/methods': 'TODO_METHODS_PAGE_ID_NO_HYPHENS',
+    // '/policy': 'TODO_PRESS_POLICY_PAGE_ID_NO_HYPHENS',
+    // '/scholar': 'TODO_SCHOLAR_BUNDLE_PAGE_ID_NO_HYPHENS'
   },
 
   name: 'Consequence Ecology',
