@@ -15,10 +15,12 @@ npm run dev
 
 Config
 
-Edit `site.config.ts`:
+Edit `site.config.ts` or set environment variables:
 
-- `rootNotionPageId` (no hyphens) — Press Kit page
-- `pageUrlOverrides` — map routes to Notion page IDs (no hyphens)
+- `NOTION_PAGE_PRESSKIT` — root Press Kit page (no hyphens)
+- `NOTION_PAGE_CHANGELOG` — overrides `/changelog` (defaults to ELARRI changelog view)
+- `NOTION_PAGE_METHODS`, `NOTION_PAGE_POLICY`, `NOTION_PAGE_SCHOLAR` — optional pretty routes
+- Any value provided is automatically de-hyphenated before use
 
 ---
 

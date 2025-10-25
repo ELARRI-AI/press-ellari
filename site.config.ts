@@ -1,17 +1,26 @@
 import { siteConfig } from './lib/site-config'
 
+const notionId = (value?: string | null, fallback?: string) =>
+  value?.replace(/-/g, '') ?? fallback
+
+const pageUrlOverridesEntries = [
+  ['/changelog', notionId(process.env.NOTION_PAGE_CHANGELOG, '296d755ae04880b5a963c65fbd10afce')],
+  ['/methods', notionId(process.env.NOTION_PAGE_METHODS)],
+  ['/policy', notionId(process.env.NOTION_PAGE_POLICY)],
+  ['/scholar', notionId(process.env.NOTION_PAGE_SCHOLAR)]
+].filter(([, id]) => Boolean(id)) as Array<[string, string]>
+
+const pageUrlOverrides =
+  pageUrlOverridesEntries.length > 0
+    ? Object.fromEntries(pageUrlOverridesEntries)
+    : null
+
 export default siteConfig({
-  // Press Kit root (no hyphens)
-  rootNotionPageId: '295d755ae04880ce98e0ded4e642e0b7',
+  // Press Kit root. Provide NOTION_PAGE_PRESSKIT env or fall back to default.
+  rootNotionPageId: notionId(process.env.NOTION_PAGE_PRESSKIT, '297d755ae048810298e5c327291fb443'),
 
   // Pretty URLs -> Notion page IDs (no hyphens)
-  pageUrlOverrides: {
-    '/changelog': '296d755ae04880b5a963c65fbd10afce', // Press Changelog view page
-    // Fill in these overrides once the corresponding Notion pages are ready
-    // '/methods': 'TODO_METHODS_PAGE_ID_NO_HYPHENS',
-    // '/policy': 'TODO_PRESS_POLICY_PAGE_ID_NO_HYPHENS',
-    // '/scholar': 'TODO_SCHOLAR_BUNDLE_PAGE_ID_NO_HYPHENS'
-  },
+  pageUrlOverrides,
 
   name: 'Consequence Ecology',
   domain: 'press.ellari.ai',
