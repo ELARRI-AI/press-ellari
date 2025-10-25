@@ -17,10 +17,13 @@ Config
 
 Edit `site.config.ts` or set environment variables:
 
-- `NOTION_PAGE_PRESSKIT` — root Press Kit page (no hyphens)
-- `NOTION_PAGE_CHANGELOG` — overrides `/changelog` (defaults to ELARRI changelog view)
-- `NOTION_PAGE_METHODS`, `NOTION_PAGE_POLICY`, `NOTION_PAGE_SCHOLAR` — optional pretty routes
-- Any value provided is automatically de-hyphenated before use
+- `NOTION_PAGE_PRESSKIT` — Press Kit home (defaults to `297d755ae048810298e5c327291fb443`)
+- `NOTION_PAGE_CHANGELOG` — `/changelog` (defaults to `297d755ae04880029786fc961c90f1f6`)
+- `NOTION_PAGE_PRESS_METHODS` — `/methods` (`297d755ae048805596a6fcabf798bc81`)
+- `NOTION_PAGE_PRESS_POLICY` — `/policy` (`297d755ae0488080b963fb8f57096ea4`)
+- `NOTION_PAGE_PRESS_FAQ` — `/faq` (`297d755ae048803ebf68f613e62bac9b`)
+- `NOTION_PAGE_SCHOLAR_BUNDLE` — `/scholar` (`297d755ae0488048bf23c5ac0f7c6039`)
+- Values can include hyphens; the app strips them automatically
 
 ---
 
