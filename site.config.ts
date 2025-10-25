@@ -18,5 +18,5 @@ export default siteConfig({
   description:
     'Press-safe Consequence Ecology: methods, policy, changelog, and scholar bundle.',
   isPreviewImageSupportEnabled: true,
-  isTweetEmbedEnabled: false
+  isTweetEmbedSupportEnabled: false
 })
