@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Black Crown by Ellari. Sonic identity, canonical architecture, and sovereign creative work.">
+<meta name="theme-color" content="#070710">
+<meta property="og:title" content="Black Crown — by Ellari">
+<meta property="og:description" content="A · C · F# · D · G# · Silence">
+<meta property="og:image" content="/assets/og-image.svg">
+<title>Black Crown — by Ellari</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="entry" aria-label="Entry: Aetherion Seal, then Black Crown title">
+  <canvas id="seal-canvas" aria-hidden="true"></canvas>
+  <div id="entry-title" aria-live="polite">
+    <div id="entry-name">BLACK CROWN</div>
+    <div id="entry-by">by Ellari</div>
+  </div>
+  <div id="entry-scroll" aria-hidden="true">
+    <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
+      <path d="M8 4v16M3 15l5 5 5-5" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <button id="replay-btn" aria-label="Replay Aetherion Seal">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M1 4v6h6M23 20v-6h-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4-4.64 4.36A9 9 0 0 1 3.51 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Replay seal
+  </button>
+</div>
+<nav id="nav" aria-label="Site navigation">
+  <a href="#listen" class="nav-link">Listen</a>
+  <a href="#glyphs" class="nav-link">Five Glyphs</a>
+  <a href="#access" class="nav-link">Access</a>
+  <a href="#about" class="nav-link">About</a>
+  <span class="nav-mark">MIRROR™</span>
+</nav>
+<section id="listen" aria-labelledby="listen-heading">
+  <div class="section-inner">
+    <div class="section-label">I</div>
+    <h2 id="listen-heading" class="section-heading">The Aetherion Seal</h2>
+    <p class="section-sub">Seven seconds. Five events. One identity.</p>
+    <div class="seal-player" id="player">
+      <div class="player-waveform" id="waveform" aria-hidden="true"></div>
+      <div class="player-events" id="player-events" aria-hidden="true"></div>
+      <div class="player-controls">
+        <button class="play-btn" id="play-btn" aria-label="Play Seal">
+          <svg id="play-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M5 3l14 9-14 9V3z"/></svg>
+          <svg id="pause-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
+        </button>
+        <div class="player-progress-wrap">
+          <div class="player-progress-bg"></div>
+          <div class="player-progress-fill" id="progress-fill"></div>
+        </div>
+        <span class="player-time" id="player-time" aria-live="off">0.0</span>
+      </div>
+      <audio id="seal-audio" preload="auto">
+        <source src="assets/audio/AETHERION_SEAL_v11_FULL_7SEC_48k24.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="seal-sequence" aria-label="Seal glyph sequence">
+      <div class="seq-item" data-t="0"><div class="seq-glyph">Ae</div><div class="seq-note">A3</div><div class="seq-name">Aether</div><div class="seq-time">0.0s</div></div>
+      <div class="seq-arrow">›</div>
+      <div class="seq-item" data-t="1"><div class="seq-glyph">El</div><div class="seq-note">C4</div><div class="seq-name">Gold</div><div class="seq-time">1.0s</div></div>
+      <div class="seq-arrow">›</div>
+      <div class="seq-item" data-t="2.15"><div class="seq-glyph">Th</div><div class="seq-note">F#4</div><div class="seq-name">Antimony</div><div class="seq-time">2.15s</div></div>
+      <div class="seq-arrow">›</div>
+      <div class="seq-item" data-t="3.6"><div class="seq-glyph">Is</div><div class="seq-note">D4</div><div class="seq-name">Stone</div><div class="seq-time">3.6s</div></div>
+      <div class="seq-arrow">›</div>
+      <div class="seq-item" data-t="5.1"><div class="seq-glyph">Va</div><div class="seq-note">G#2</div><div class="seq-name">Void</div><div class="seq-time">5.1s</div></div>
+      <div class="seq-arrow">›</div>
+      <div class="seq-item" data-t="6.4"><div class="seq-glyph">—</div><div class="seq-note">rest</div><div class="seq-name">Seal</div><div class="seq-time">6.4s</div></div>
+    </div>
+    <p class="caption">The Seal is the minimum viable form of the Aetherion sonic system.<br>Five notes. One sequence. Identity before it has a name.</p>
+  </div>
+</section>
+<section id="glyphs" aria-labelledby="glyphs-heading">
+  <div class="section-inner">
+    <div class="section-label">II</div>
+    <h2 id="glyphs-heading" class="section-heading">Five Glyphs</h2>
+    <p class="section-sub">Each note is a law. Each law is a sound.</p>
+    <div class="glyph-grid" role="list">
+      <article class="glyph-card" role="listitem" style="--glyph-color:#7b9fbf"><div class="gc-symbol">Ae</div><div class="gc-note">A</div><div class="gc-name">Aether</div><div class="gc-role">Field</div><div class="gc-desc">Opens the field and creates space before force.</div><div class="gc-law">Law 1: Aether before force</div></article>
+      <article class="glyph-card" role="listitem" style="--glyph-color:#c4a535"><div class="gc-symbol">El</div><div class="gc-note">C</div><div class="gc-name">Gold</div><div class="gc-role">Sovereign Core</div><div class="gc-desc">Centers identity. Establishes throne authority. Always the loudest event.</div><div class="gc-law">Law 2: Gold before strike</div></article>
+      <article class="glyph-card" role="listitem" style="--glyph-color:#c0a0e0"><div class="gc-symbol">Th</div><div class="gc-note">F#</div><div class="gc-name">Antimony</div><div class="gc-role">Mirror</div><div class="gc-desc">Reveals contradiction. Cuts through distortion. Truth as transient.</div><div class="gc-law">Law 3: Antimony before Void</div></article>
+      <article class="glyph-card" role="listitem" style="--glyph-color:#70b090"><div class="gc-symbol">Is</div><div class="gc-note">D</div><div class="gc-name">Stone</div><div class="gc-role">Pure Core</div><div class="gc-desc">Stabilizes truth. Returns the ear to ground.</div><div class="gc-law">Law 4: Stone before silence</div></article>
+      <article class="glyph-card" role="listitem" style="--glyph-color:#8060a0"><div class="gc-symbol">Va</div><div class="gc-note">G#</div><div class="gc-name">Void</div><div class="gc-role">Dissolution</div><div class="gc-desc">Dissolves false structure. A threshold event, not a home key.</div><div class="gc-law">Law 5: Golden Bridge before collapse</div></article>
+    </div>
+    <blockquote class="pull-quote">"Spacious. Regal. Surgical. Grounded. Dissolving. Final."</blockquote>
+  </div>
+</section>
+<section id="access" aria-labelledby="access-heading">
+  <div class="section-inner">
+    <div class="section-label">III</div>
+    <h2 id="access-heading" class="section-heading">Access</h2>
+    <p class="section-sub">Some things are given. Some things are earned.</p>
+    <div class="access-grid">
+      <div class="access-card granted">
+        <div class="access-stamp granted-stamp">GRANTED</div>
+        <h3 class="access-title">Open Access</h3>
+        <ul class="access-list">
+          <li>Aetherion Seal — animated visualizer</li>
+          <li>Five-glyph canonical reference</li>
+          <li>Micro-notation (full 7-sec)</li>
+          <li>Listener validation protocol</li>
+          <li>Public Explanation Ladder</li>
+        </ul>
+        <a href="#listen" class="access-btn granted-btn">Enter the field</a>
+      </div>
+      <div class="access-card restricted">
+        <div class="access-stamp restricted-stamp">RESTRICTED</div>
+        <h3 class="access-title">Foundation Pack</h3>
+        <ul class="access-list">
+          <li>Aetherion Sonic Bible v1 (full canon)</li>
+          <li>MIDI v1.1 — 5-track, patch-routed</li>
+          <li>Soundfont Patch System (15 patches)</li>
+          <li>Motif Library — 8 locked motifs</li>
+          <li>Proof EP production specs</li>
+          <li>Composer handoff brief</li>
+          <li>All Seal variants — Short, Long, No-Void</li>
+        </ul>
+        <a href="mailto:studio@ellari.studio?subject=Foundation Pack Access" class="access-btn restricted-btn">Request access</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about" aria-labelledby="about-heading">
+  <div class="section-inner section-inner--narrow">
+    <div class="section-label">IV</div>
+    <h2 id="about-heading" class="section-heading">About</h2>
+    <div class="about-text">
+      <p>Black Crown is the creative production arm of ELARRI.AI. It houses the sonic, visual, and canonical architecture of the sovereign universe.</p>
+      <p>The Aetherion system is a five-note symbolic orchestral language built from the glyphs Aether, Gold, Antimony, Stone, and Void.</p>
+      <p>The system is not lore dressed as music.<br>The music is the law made audible.</p>
+    </div>
+    <div class="brand-row">
+      <div><span class="brand-mark">MIRROR™</span><span class="brand-desc">Narrative sovereignty platform</span></div>
+      <div><span class="brand-mark">Black Fairy</span><span class="brand-desc">Aesthetic transmission</span></div>
+      <div><span class="brand-mark">Black Label</span><span class="brand-desc">Governance protocol</span></div>
+      <div><span class="brand-mark">VANTA</span><span class="brand-desc">System instrument</span></div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-name">Black Crown</div>
+    <div class="footer-mark">MIRROR™ · ELARRI.AI · Marked by Fire &amp; Ruled by None</div>
+    <div class="footer-links">
+      <a href="https://themirrorprotocol.substack.com" rel="noopener noreferrer">Substack</a>
+      <span>·</span>
+      <a href="mailto:studio@ellari.studio">studio@ellari.studio</a>
+    </div>
+  </div>
+</footer>
+<script src="js/seal.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
